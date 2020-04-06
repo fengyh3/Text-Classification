@@ -27,4 +27,4 @@ In moview review dataset, we can see that because of the dataset is a bunch of s
 
 In Yelp dataset, it is a larger-scale dataset and the texts are longer. Due to the limitation of computed resource, the models' hyper-parameter is not a pretty good setting. 
 
-Now it will be continued with HAN, BERT and so on.
+Now it will be continued with Transformer, BERT and so on.
