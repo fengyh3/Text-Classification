@@ -32,8 +32,8 @@ class LSTM(object):
 
     def attention_layer(self, inputs):
         attention_weight = tf.get_variable(name = 'attention_weight', shape = [2 * self.hidden_size], initializer = self.initializer)
-        #hidden_representation = tf.layers.dense(inputs, units = 2 * self.hidden_size, activation = tf.nn.tanh)
-        reduce_sum = tf.reduce_sum(tf.multiply(inputs, attention_weight), axis = 2, keepdims = True)
+        hidden_representation = tf.layers.dense(inputs, units = 2 * self.hidden_size, activation = tf.nn.tanh)
+        reduce_sum = tf.reduce_sum(tf.multiply(hidden_representation, attention_weight), axis = 2, keepdims = True)
 
         alpha = tf.nn.softmax(reduce_sum, dim = 1)
 
