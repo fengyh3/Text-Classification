@@ -4,12 +4,13 @@ You can download this code and pre-trained model and then fine tune your task.
 
 # About Dateset in text classification
 We can use the code in run_classifier.py. So the dataset should be "label (TAB) text-content", like:
-'''
+
+'''python
 2	As someone who has worked with many museums, I was eager to visit this gallery on my most recent trip to Las Vegas. When I saw they would be showing infamous eggs of the House of Faberge from the Virginia Museum of Fine Arts (VMFA), I knew I had to go!Tucked away near the gelateria and the garden, the Gallery is pretty much hidden from view. It's what real estate agents would call "cozy" or "charming" - basically any euphemism for small.That being said, you can still see wonderful art at a gallery of any size, so why the two *s you ask? Let me tell you:* pricing for this, while relatively inexpensive for a Las Vegas attraction, is completely over the top. For the space and the amount of art you can fit in there, it is a bit much.* it's not kid friendly at all. Seriously, don't bring them.* the security is not trained properly for the show. When the curating and design teams collaborate for exhibitions, there is a definite flow. That means visitors should view the art in a certain sequence, whether it be by historical period or cultural significance (this is how audio guides are usually developed). When I arrived in the gallery I could not tell where to start, and security was certainly not helpful. I was told to "just look around" and "do whatever." At such a *fine* institution, I find the lack of knowledge and respect for the art appalling.
 '''
 
 # Change in run_classification.py
-'''
+'''python
 class YelpProcessor(DataProcessor):
   def __init__(self):
     self.labels = ['1', '2', '3', '4', '5']
@@ -41,7 +42,7 @@ class YelpProcessor(DataProcessor):
 
 We can inherit the DataProcess class, and then implement the class method to get the train, dev and test data. And then add it to processors in main function and named it "mytask":
 
-'''
+'''python
 def main(_):
   tf.logging.set_verbosity(tf.logging.INFO)
 
@@ -56,7 +57,7 @@ def main(_):
 
 # About run the code
 We can use the command:
-'''
+'''python
 python run_classifier.py \
  --task_name=mytask \
  --do_train=true \
