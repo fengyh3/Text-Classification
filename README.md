@@ -18,7 +18,7 @@ Some results about accuracy are in below:
 |      | CNN    | BiLSTM    | BiLSTM + attention | FastText | RCNN_max-pooling | RCNN_average-pooling|    HAN    |  Bert-Tiny | Bert-Small |
 | ---- | ------ | ------ | ------ | ---------- |---------------------|-------------------------|-----------------|------------|------------|
 |movie review | 76.2% | 79.5% | 76.9% |   80.3%   |     80.4%          |        80.3%            |      -%    |  77.2%(dataset encoding issue)  |  77.2%    |
-|Yelp | 65.1% | 68.2% | 70.2% |  69.5%    |               |                    |    70.5%      |   |  |
+|Yelp | 65.1% | 68.2% | 70.2% |  69.5%    |               |                    |    70.5%      | 72.5%  |    |
 
 # Tips
 Note that the models do not contain save and load model in tensorflow, and it contains visulazation using tensorboard. Moreover, the models just simply ajust the hyper-parameters and in FastText it just uses unigram. So it just a toy-level demo and use it to learn the text classification.
