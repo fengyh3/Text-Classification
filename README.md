@@ -15,7 +15,7 @@ Now it contain four models: CNN/BiLSTM/BiLSTM+attention/FastText/HAN.(To be cont
 # Results
 Some results about accuracy are in below:
 
-|      | CNN    | BiLSTM    | BiLSTM + attention | FastText | RCNN_max-pooling | RCNN_average-pooling|    HAN    |  Bert-Tiny | Bert-Small |
+|      | CNN    | BiLSTM    | BiLSTM + attention | FastText | RCNN_max-pooling | RCNN_average-pooling|    HAN    |  Bert-Tiny | Bert-Mini |
 | ---- | ------ | ------ | ------ | ---------- |---------------------|-------------------------|-----------------|------------|------------|
 |movie review | 76.2% | 79.5% | 76.9% |   80.3%   |     80.4%          |        80.3%            |      -%    |  77.2%(dataset encoding issue)  |  77.2%    |
 |Yelp | 65.1% | 68.2% | 70.2% |  69.5%    |               |                    |    70.5%      | 72.5%  |  74.8%  |
